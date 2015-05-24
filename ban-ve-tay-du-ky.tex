@@ -1,0 +1,112 @@
+\documentclass[11pt]{report}
+\usepackage[utf8]{vntex}
+\usepackage{lmodern}
+\usepackage{indentfirst}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{a5paper,twoside,left=2.5cm,rmargin=1cm,top=1cm,bottom=1.5cm}
+
+%==============================================================================
+\usepackage[titles]{tocloft}
+\usepackage{calc}
+\usepackage{afterpage}
+\usepackage{parskip}
+\usepackage{multicol}
+%==============================================================================
+% Define: new commands:
+\newcommand\blankpage{
+    \null
+    \thispagestyle{empty}
+    \addtocounter{page}{-1}
+    \newpage}
+
+%==============================================================================
+\setlength{\columnsep}{0.1cm}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\setlength{\parindent}{15pt}
+%==============================================================================
+% New enviroments
+\newenvironment{newenumerate}
+    {\begin{enumerate}
+    \setlength{\itemsep}{1pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}}
+    {\end{enumerate}}
+
+\newenvironment{newitemize}
+    {\begin{itemize}
+    \setlength{\itemsep}{1pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}}
+    {\end{itemize}}
+
+\newenvironment{newdescription}
+    {\begin{description}
+    \setlength{\itemsep}{1pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}}
+    {\end{description}}
+%==============================================================================
+% Chapter counter reset at beginning of every part
+\makeatletter
+\@addtoreset{chapter}{part}
+\makeatother
+%==============================================================================
+\renewcommand\chaptername{Chương}
+\renewcommand\cftchappresnum{\chaptername\space}
+\setlength{\cftchapnumwidth}{\widthof{\textbf{Chương~999~}}}
+%==============================================================================
+\hypersetup{
+     unicode=true,
+     pdftitle={Bàn Về Tây Du Ký của Ngô Thừa Ân},
+     pdfauthor={Hòa Thượng Thích Chơn Thiện},
+     pdfsubject={Life},
+     pdfcreator={pdflatex/TeXLive},
+     pdfproducer={TeX},
+     pdfkeywords={book} {buddhism} {},
+     colorlinks=true,
+     linkcolor=blue,
+     citecolor=green,
+     filecolor=magenta,
+     urlcolor=blue
+}
+%==============================================================================
+\title{\textbf{\Huge{Bàn Về Tây Du Ký của Ngô Thừa Ân}}}
+\author{\textsc{Hòa Thượng Thích Chơn Thiện}}
+\date{}
+%==============================================================================
+
+\begin{document}
+
+%==============================================================================
+\include{0-0cover}
+\include{0-0title}
+\afterpage{\blankpage}
+%==============================================================================
+\pagenumbering{roman}
+%==============================================================================
+\include{0-1loinoidau}
+\include{0-2gioithieutacgia}
+%==============================================================================
+\tableofcontents
+\addcontentsline{toc}{chapter}{Mục Lục}
+\newpage
+\afterpage{\blankpage}
+%==============================================================================
+\pagenumbering{arabic}
+%==============================================================================
+\include{chapter1}
+\include{chapter2}
+\include{chapter3}
+\include{chapter4}
+\include{chapter5}
+\include{chapter6}
+\include{chapter7}
+\include{chapter8}
+\include{chapter9}
+\include{chapter10}
+%==============================================================================
+
+\end{document}
+
+%==============================================================================
