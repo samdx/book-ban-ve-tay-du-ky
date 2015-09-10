@@ -31,7 +31,7 @@ Soạn giả cẩn bút,
 
 ## 3. Tải về ##
 
-Bản ebook có thể tải về tại mục [Downloads](https://bitbucket.org/xuansamdinh/ban-ve-tay-du-ky/downloads) của kho này (Thanh dọc bên trái cửa sổ trình duyệt).
+Bản ebook có thể tải về tại mục [Downloads](https://bitbucket.org/xuansamdinh/ban-ve-tay-du-ky/downloads) của kho này.
 
 * *ebook*: bản này là bản pdf có màu cho các tiêu đề, đường dẫn, liên kết chéo, vv... phù hợp cho xem trên các thiết bị điện tử.
 * *print*: bản này chỉ một màu chữ đen, thích hợp cho việc in ấn, tránh bị mờ chữ đối với các thành phần sử dụng màu khi in đen trắng.
